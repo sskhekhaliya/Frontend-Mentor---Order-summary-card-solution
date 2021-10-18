@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <style>
+    body {
+      background: hsl(225, 100%, 94%);
+      background-image: url("images/pattern-background-desktop.svg");
+      background-repeat: repeat-x;
+      font-family: 'Red Hat Display', sans-serif;
+      margin: 0;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    h5 {
+      margin-top: 0;
+      margin-bottom: 3px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      color: hsl(224, 23%, 55%);
+    }
+
+    .container{
+      margin: 25px;
+      display: inline-block;
+    }
+
+    .main-container {
+      border-radius: 20px;
+      overflow: hidden;
+      width: 450px;
+      margin: auto;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0px 20px 20px 4px hsl(233deg 48% 42% / 6%)
+    }
+
+    .description {
+      max-width: 80%;
+      margin: auto;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .anual-plan {
+      text-align: left;
+      background-color: hsl(225, 100%, 98%);
+      width: 75%;
+      margin: auto;
+      border-radius: 10px;
+      padding: 15px 10px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin: 25px auto;
+    }
+
+    .price {
+      padding-left: 15px;
+    }
+
+    .price p {
+      font-size: 13px;
+    }
+
+    .anual-plan a {
+      font-size: 13px;
+      position: absolute;
+      right: 20px;
+      font-weight: bold;
+      color: hsl(245, 75%, 52%);
+    }
+
+    .anual-plan:hover a {
+      color: hsl(245, 75%, 70%);
+      text-decoration: none;
+    }
+
+    .Proceed-btn {
+      background-color: #3829e0;
+      width: 75%;
+      height: 36px;
+      font-family: 'Red Hat Display';
+      color: hsl(225, 100%, 98%);
+      font-size: 12px;
+      border-radius: 8px;
+      border: none;
+      box-shadow: 0px 10px 24px 1px hsl(245deg 75% 52% / 40%);
+      margin-bottom: 25px;
+      cursor: pointer;
+    }
+
+    .Proceed-btn:hover {
+      background-color: hsl(245, 75%, 70%);
+    }
+
+    .cancel-btn {
+      border: none;
+      background: none;
+      font-family: 'Red Hat Display';
+      font-weight: bold;
+      font-size: small;
+      color: hsl(224, 23%, 55%);
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+
+    .cancel-btn:hover {
+      color: black;
+    }
+
+
+    .attribution {
+      margin-top: 5px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  <div class="main-container">
+    <img src="images/illustration-hero.svg" alt="hero">
+
+    <h2>Order Summary</h2>
+
+    <p class="description">You can now listen to millions of songs, audiobooks, and podcasts on any
+      device anywhere you like!</p>
+    <div class="anual-plan">
+      <img class="music-icon" src="images/icon-music.svg" alt="">
+      <div class="price">
+        <h5>Annual Plan</h5>
+        <p>$59.99/year</p>
+      </div>
+      <a href="#">Change</a>
+    </div>
+    <button class="Proceed-btn" type="button" name="button">
+      Proceed to Payment
+    </button><br>
+    <button class="cancel-btn" type="button" name="button">
+      Cancel Order
+    </button>
+  </div>
+  <div class="attribution">
+    <span>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.sskhekhaliya.com">SSKhekhaliya</a>.</span>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>
